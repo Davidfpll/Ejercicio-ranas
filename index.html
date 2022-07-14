@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesion 7</title>
+    <style>
+      body {
+        font-size: 30px; /*Tamaño del texto*/
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center; /*Centrar todo el contenido interior*/
+      }
+      h1,
+      h2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .ranas-repetidas {
+        border: 4px solid; /*borde*/
+        width: 700px; /*ancho del div*/
+        height: 300px; /*altura*/
+        /*imagen de fondo*/
+        background-image: url(imagenes/rana.png);
+        /*se repite en el eje x*/
+        background-repeat: repeat-x;
+        background-color: rgb(70, 232, 243);
+        /*Centrar un div*/
+        margin-left: auto;
+        margin-right: auto;
+        /*
+        Otras formas de escribirlo
+        margin: 0 auto 0 auto
+        margin: 0 auto
+        */
+      }
+      img {
+        width: 700px;
+        border: 4px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Una imagen vale más que mil palabras</h1>
+    <h2>(imágenes y Backgrounds)</h2>
+    <p>Imagen con enlace absoluto externo</p>
+    <img
+      src="https://s03.s3c.es/imag/_v0/770x420/f/6/5/Una-rana-verde-de-ojos-rojos-en-planta-iStock.jpg"
+      alt="rana con enlace absoluto"
+    />
+
+    <p>Imagen con enlace relativo</p>
+    <img src="imagenes/rana-relativa.jpg" alt="rana relativa" />
+
+    <div class="ranas-repetidas">aquí va la imagen</div>
+  </body>
+</html>
